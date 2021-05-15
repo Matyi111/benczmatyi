@@ -1,0 +1,126 @@
+div, body, main, header, footer {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+    hyphens: auto;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 18pt;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ff7733;
+    display: grid;
+    grid-template-rows: max-content max-content 1fr max-content;
+}
+
+main {
+    background-color: #ffa273;
+    margin: 0 auto;
+    margin-bottom: 10pt;
+    border: 3px white solid;
+    width: 90%;
+    padding: 5pt;
+    border-radius: 10pt;
+}
+
+.felezo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10pt;
+}
+
+.felezo > div {
+    max-width: 100%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10pt;
+    grid-gap: 10pt;
+}
+
+header a {
+    display: inline-flex;
+    text-align: center;
+    background-color: #ffa273;
+    border: white 3px solid;
+    border-radius: 5pt;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    padding: 4pt 0;
+    
+    font-size: 30pt;
+}
+
+header a div {
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.kepek {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 5pt 5pt;
+}
+div.kepek div {
+    padding: 10pt;
+}
+div.kepek img {
+    max-height: 500px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 0;
+    border: white 5px solid;
+    border-radius: 10px;
+}
+div.kepek img:hover {
+    box-shadow: 0 0 10px white;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.portfolio {
+    font-size: 24pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    display: inline-block;
+    margin: 0;
+}
+
+footer {
+    margin: 0 10pt;
+    padding: 4pt;
+    border: white 3px solid;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    background-color: #ffa273;
+}
+
+footer a, footer a:visited {
+    display: inline-block;
+    color: inherit;
+    font-size: 16pt;
+}
+
+footer a:hover {
+    color: blue;
+}
